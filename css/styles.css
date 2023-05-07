@@ -293,11 +293,10 @@ img {
     transition: color var(--anime);
 }
 
-@media only screen and (min-width: min768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
     .header-cont {
-        font-style: Regular;
         font-size: 12px;
-        line-height: 1.5;
+        line-height: 1.17;
         color: var(--color-slate);
 
     }
@@ -330,16 +329,42 @@ img {
 }
 
 .hero-title {
-    max-width: 496px;
+    max-width: 320px;
     font-family: var(--primary-font);
-    font-size: 56px;
-    line-height: 1.07;
     text-align: center;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--color-white);
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
+
+
+
+    text-transform: capitalize;
+
+
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-title {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+
+        text-transform: none;
+
+
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .hero-title {
+        margin-bottom: 48px;
+
+    }
 }
 
 
@@ -381,10 +406,16 @@ img {
 /* FEATURE Styles */
 
 .feature {
-    padding: 120px 0
+    padding: 96px 0;
 }
 
-.feature-title {
+@media only screen and (min-width: 1158px) {
+    .feature {
+        padding: 120px 0;
+    }
+}
+
+/* .feature-title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 56px;
@@ -394,19 +425,54 @@ img {
     text-transform: capitalize;
     color: var(--color-navy-blue);
 
-}
+} */
 
 .feature-list {
+
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px
 }
 
+@media only screen and (min-width: 768px) {
+    .feature-list {
+        flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+    .feature-list {
+        /* flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px; */
+    gap: 24px;
+  }
+}
+
+
 .feature-item {
-    width: calc((100% - 3 * 24px) / 4);
+    /* width: calc((100% - 3 * 24px) / 4); */
+}
+
+@media only screen and (min-width: 768px) {
+    .feature-item {
+        width: calc((100% - 1 * 24px) / 2);
+    }
+}
+
+
+@media only screen and (min-width: 1158px) {
+    .feature-item {
+        width: calc((100% - 3 * 24px) / 4);
+    }
 }
 
 .feature-container-icon {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 112px;
@@ -415,17 +481,32 @@ img {
     margin-bottom: 8px;
 }
 
+@media only screen and (min-width: 1158px) {
+    .feature-container-icon {
+        display: flex;
+    }
+}
 
 
 .feature-undertitle {
     font-family: var(--primary-font);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-align: center;
     color: var(--color-navy-blue);
     margin-bottom: 8px;
 }
+
+@media only screen and (min-width: 1158px) {
+    .feature-undertitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 
 .feature-desc {
     font-family: 'Roboto', sans-serif;
@@ -434,6 +515,9 @@ img {
     letter-spacing: 0.02em;
     color: var(--color-slate);
 }
+
+
+
 
 .benefits {
     padding-bottom: 120px;
@@ -1139,14 +1223,21 @@ img {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.menu-toggle-icon {
+    stroke: var(--color-navy-blue);
+}
+
 .menu-container {
     position: fixed;
     top: 0;
     left: 0;
+
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
-    background-color: #3f51b5;
+    padding: 80px 35px 40px 40px;
+    background-color: var(--color-white);
     z-index: 999;
 
     transform: translateX(100%);
@@ -1167,12 +1258,29 @@ img {
 .mobile-menu {
     padding: 0;
     margin: 0;
+    margin-bottom: auto;
     list-style: none;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--color-navy-blue);
+    Fill Color Style: NAVY BLUE Fill: Solid #2E2F42
 }
 
 .mobile-menu .link {
     display: block;
     padding: 10px;
-    color: #fff;
+    color: var(--color-navy-blue);
     text-decoration: none;
 }
+
+.phone-contacts {
+    margin-bottom: 48px;
+}
+
+/* in work
+.team-social-list>.menu-container {
+    justify-content: space-between;
+} */
