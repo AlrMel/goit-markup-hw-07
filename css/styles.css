@@ -1094,7 +1094,7 @@ img {
 
     position: absolute;
     width: 392px;
-    /* width: 408px; */
+    
     min-height: 576px;
     left: 50%;
     top: 50%;
@@ -1113,6 +1113,12 @@ img {
 @media only screen and (max-width: 392px) {
     .modal {
     width: calc(100% - 30px);
+  }
+}
+
+@media only screen and (min-width: 428px) {
+    .modal {
+    width: 408px;
   }
 }
 
