@@ -156,7 +156,13 @@
             <div class="container">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list list">
-                    <li class="team-item"><img src="./images/ourteam/img-3.jpg" alt="photo-product" width="264"
+                    <li class="team-item">
+                        <img 
+                        srcset="./images/ourteam/img@1x.jpg 1x, 
+                        ./images/ourteam/img@2x.jpg 2x"
+                        src="./images/ourteam/img@1x.jpg"
+                         alt="photo-product"
+                          width="264"
                             height="260">
                         <div class="team-item-desc">
                             <h3 class="team-undertitle">Mark Guerrero</h3>
@@ -193,7 +199,11 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-item"><img src="./images/ourteam/img-2.jpg" alt="photo-developer" width="264"
+                    <li class="team-item">
+                        <img srcset="./images/ourteam/img@1x-1.jpg 1x, 
+                        ./images/ourteam/img@2x-1.jpg 2x"
+                         src="./images/ourteam/img@1x-1.jpg" 
+                         alt="photo-developer" width="264"
                             height="260">
                         <div class="team-item-desc">
                             <h3 class="team-undertitle">Tom Ford</h3>
@@ -230,7 +240,11 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-item"><img src="./images/ourteam/img-1.jpg" alt="photo-marketing" width="264"
+                    <li class="team-item">
+                        <img srcset="./images/ourteam/img@1x-2.jpg 1x, 
+                        ./images/ourteam/img@2x-2.jpg 2x"
+                        src="./images/ourteam/img@1x-2.jpg" 
+                         alt="photo-marketing" width="264"
                             height="260">
                         <div class="team-item-desc">
                             <h3 class="team-undertitle">Camila Garcia</h3>
@@ -267,7 +281,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-item"><img src="./images/ourteam/img.jpg" alt="photo-designer" width="264"
+                    <li class="team-item">
+                        <img srcset="./images/ourteam/img@1x-3.jpg 1x, 
+                        ./images/ourteam/img@2x-3.jpg 2x"
+                        src="./images/ourteam/img@1x-3.jpg" alt="photo-designer" width="264"
                             height="260">
                         <div class="team-item-desc">
                             <h3 class="team-undertitle">Daniel Wilson</h3>
@@ -415,9 +432,10 @@
             <div class="footer-right-right">
                 <p class="footer-social">Subscribe</p>
                 <form class="footer-form">
-                    <label class="footer-email" for="footer_email">
-                        <input class="footer-form-input" type="email" name="footer_email" id="footer_email" required
+                    <input class="footer-form-input" type="email" name="footer_email" id="footer_email" required
                             placeholder="E-mail">
+                    <label class="footer-email" for="footer_email">
+                        
 
                     </label>
 
@@ -439,7 +457,7 @@
 
     <!-- Modal -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -520,7 +538,7 @@
           <button class="modal-button hero-button btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <!-- Phone menu -->
     <div class="menu-container js-menu-container" 
