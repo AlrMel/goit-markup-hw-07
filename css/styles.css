@@ -308,15 +308,11 @@ img {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     font-family: "Roboto", sans-serif;
     /* background-color: var(--color-grey);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-images/hero-bg.jpg); */
-
-
-
-
 
     background-position: center;
     background-repeat: no-repeat;
@@ -365,6 +361,13 @@ img {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero_deks@2x.jpg);
         }
     }
+}
+
+@media only screen and (min-width: 1158px) {
+ .hero  {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
 }
 
 .hero-title {
@@ -527,6 +530,11 @@ img {
     margin-bottom: 8px;
 }
 
+@media only screen and (min-width: 768px) {
+    .feature-undertitle {
+        text-align: left;
+    }
+}
 
 @media only screen and (min-width: 1158px) {
     .feature-undertitle {
@@ -612,8 +620,21 @@ img {
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 72px;
     justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .team-list {
+        row-gap: 64px;
+        column-gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+    .team-list {
+        gap: 24px;
+  }
 }
 
 .team-item {
@@ -774,7 +795,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 32px;
+    padding: 16px 0;
     border: 1px solid var(--color-light-slate);
     border-radius: 4px;
     color: var(--color-light-slate);
@@ -847,7 +868,7 @@ img {
     color: var(--color-white);
     margin-bottom: 16px;
 
-    margin-right: 24px;
+    
 }
 
 @media only screen and (max-width: 767px) {
@@ -857,23 +878,35 @@ img {
 }
 
 .footer-desc {
-    font-family: 'Roboto' sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-cloud);
     width: 264px;
+
+}
+
+/* @media only screen and (max-width: 1157px) {
+    .footer-left {
+        margin-bottom: 72px;
+    }
+} */
+
+.footer-left {
     margin-bottom: 72px;
 }
 
-
-@media only screen and (min-width: 767px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .footer-left {
-        margin-right: 24px;
+        margin-right: 24px;        
     }
 }
 
-.footer-left {}
+@media only screen and (min-width: 1158px) {
+    .footer-left {
+        margin: 0;
+    }
+}
 
 .footer-right .team-social-list {
     justify-content: left;
@@ -1144,10 +1177,11 @@ img {
     position: absolute;
     width: 392px;
 
-    min-height: 576px;
+    height: 584px;
+    overflow-y: scroll;
     left: 50%;
     top: 50%;
-
+    /* overflow-y: scroll; */
     opacity: 1;
     padding: 72px 24px 24px;
     background-color: var(--color-dairy);
@@ -1159,9 +1193,12 @@ img {
     transition: transform var(--anime);
 }
 
+
+
 @media only screen and (max-width: 392px) {
     .modal {
         width: calc(100% - 30px);
+        
     }
 }
 
@@ -1461,13 +1498,18 @@ img {
 }
 
 .phone-tel a {
-    font-style: normal;
+    
     font-weight: 700;
-    font-size: 35px;
+    font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--color-iris);
+}
 
+@media only screen and (max-width: 427px) {
+    .phone-tel a {
+        font-size: 24px;
+  }
 }
 
 .phone-mail a {
