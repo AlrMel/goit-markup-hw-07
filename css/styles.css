@@ -886,17 +886,13 @@ img {
 
 }
 
-/* @media only screen and (max-width: 1157px) {
-    .footer-left {
-        margin-bottom: 72px;
-    }
-} */
+
 
 .footer-left {
     margin-bottom: 72px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     .footer-left {
         margin-right: 24px;        
     }
