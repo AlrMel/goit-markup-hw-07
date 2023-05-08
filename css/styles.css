@@ -899,7 +899,8 @@ img {
 }
 
 @media only screen and (min-width: 1158px) {
-    .footer-left {
+    .footer-left
+     {
         margin: 0;
     }
 }
@@ -911,6 +912,14 @@ img {
 
 .footer-right {
     margin-bottom: 72px;
+
+}
+
+@media only screen and (min-width: 1158px) {
+    .footer-right
+     {
+        margin: 0;
+    }
 }
 
 .footer-list .team-social-link:focus {
