@@ -17,12 +17,14 @@
 <body>
 
     <header class="header header-main">
-        <div class="header-container container">
-            <!-- LOGO -->
-            <nav class="header-nav">
-                <a href="./index.html" class="header-logo  link">Web<span class="logo-dark">Studio</span></a>
 
-                <!--  -->
+        <div class="header-container container">
+
+            <nav class="header-nav">
+                <!-- LOGO -->
+
+                <a href="./index.html" class="header-logo link">Web<span class="logo-dark">Studio</span></a>
+
                 <ul class="header-list list">
                     <li class="header-item">
                         <a class="header-link link" href="./index.html">Studio</a>
@@ -35,6 +37,7 @@
                     </li>
                 </ul>
             </nav>
+
             <!-- address -->
             <address class="header-contact">
                 <ul class="contact-list list">
@@ -46,6 +49,14 @@
                     </li>
                 </ul>
             </address>
+
+
+            <!-- Phone Button -->
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="32" height="22">
+                    <use class="menu-toggle-icon" href="./images/icon.svg#icon-menu-hamburger"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -270,13 +281,14 @@
             <div class="footer-right-right">
                 <p class="footer-social">Subscribe</p>
                 <form class="footer-form">
-                    <label class="footer-email" for="footer_email">
-                        <input class="footer-form-input" 
+                    <input class="footer-form-input" 
                         type="email" 
                         name="footer_email"
                         id="footer_email"
                         required
                         placeholder="E-mail">
+                    <label class="footer-email" for="footer_email">
+                        
                 
                     </label>
                 
@@ -292,6 +304,73 @@
         </div>
     </footer>
 
+    <!-- Phone menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+
+
+        <button class="modal-btn js-close-menu" type="button">
+
+            <svg class="modal-icon" width="8" height="8">
+                <use href="./images/icon.svg#icon-close"></use>
+            </svg>
+
+        </button>
+
+
+        <ul class="mobile-menu list">
+            <li><a href="./index.html" class="link">Studio</a></li>
+            <li><a href="./portfolio.html" class="current link">Portfolio</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+        </ul>
+
+        <ul class="phone-contacts list">
+            <li class="phone-tel">
+                <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+
+            </li>
+            <li class="phone-mail">
+                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+            </li>
+        </ul>
+
+        <ul class="team-social-list footer-list list">
+            <li class="team-social-item">
+                <a href="" class="team-social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="instagram icon">
+                    <svg class="team-social-icon" width="24px" height="24px">
+                        <use href="./images/icon.svg#instagram"></use>
+                    </svg></a>
+            </li>
+            <li class="team-social-item">
+                <a href="" class="team-social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="twitter icon">
+                    <svg class="team-social-icon" width="24px" height="24px">
+                        <use href="./images/icon.svg#twitter"></use>
+                    </svg></a>
+            </li>
+            <li class="team-social-item">
+                <a href="" class="team-social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="facebook icon">
+                    <svg class="team-social-icon" width="24px" height="24px">
+                        <use href="./images/icon.svg#facebook"></use>
+                    </svg></a>
+            </li>
+            <li class="team-social-item">
+                <a href="" class="team-social-link link" target="_blank" rel="noopener noreferrer"
+                    aria-label="linkedin icon">
+                    <svg class="team-social-icon" width="24px" height="24px">
+                        <use href="./images/icon.svg#linkedin"></use>
+                    </svg></a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 
 </body>
 
